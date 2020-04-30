@@ -1,0 +1,17 @@
+{
+  "jest": {
+    "preset": "react",
+    "testMatch": [
+      "**/__tests__/**/?(*.)+(spec|test).[tj]s?(x)"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx,js,jsx}"
+    ]
+  }
+}

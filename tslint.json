@@ -1,0 +1,22 @@
+{
+  "defaultSeverity": "error",
+  "linterOptions": {
+      "project": "./tsconfig.json",
+      "exclude": [
+        "./webpack.config.js",
+        "./test-coverage/**"
+      ]
+  },
+  "extends": [
+      "tslint:recommended"
+  ],
+  "jsRules": {},
+  "rules": {
+    "quotemark": [true, "single", "avoid-escape", "avoid-template"],
+    "indent": [true, "spaces", 2],
+    "semicolon": [true, "never"],
+    "ordered-imports": false,
+    "object-literal-sort-keys": false
+  },
+  "rulesDirectory": []
+}
