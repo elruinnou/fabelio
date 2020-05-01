@@ -24,7 +24,7 @@ module.exports = {
     ],
   },
   output: {
-    path: path.join(__dirname, '../dist'),
+    path: path.resolve('./build'),
     filename: 'app.min.js'
   },
   module: {
