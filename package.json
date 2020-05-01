@@ -1,4 +1,5 @@
 {
+  "homepage": "https://elruinnou.github.io/fabelio",
   "name": "fabelio",
   "version": "0.0.1",
   "description": "Fabelio Furniture: submission for Fabelio",
@@ -11,11 +12,13 @@
     "lint:style": "stylelint src/**/*.scss",
     "test": "jest --config=jest.config.js",
     "test:watch": "jest --config=jest.config.js --watch",
-    "test:coverage": "jest --config=jest.config.js --coverage"
+    "test:coverage": "jest --config=jest.config.js --coverage",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://erwinardiansyah@bitbucket.org/erwinardiansyah/fabelio.git"
+    "url": "git+https://github.com/elruinnou/fabelio.git.git"
   },
   "keywords": [
     "react",
@@ -28,9 +31,8 @@
   "author": "ardiansyaherwin",
   "license": "ISC",
   "bugs": {
-    "url": "https://erwinardiansyah@bitbucket.org/erwinardiansyah/fabelio/issues"
+    "url": "https://github.com/elruinnou/fabelio.git/issues"
   },
-  "homepage": "https://erwinardiansyah@bitbucket.org/erwinardiansyah/fabelio#readme",
   "husky": {
     "hooks": {
       "pre-commit": "yarn run lint",
@@ -50,6 +52,7 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "file-loader": "5.0.2",
     "fsevents": "1.2.11",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "3.2.0",
     "husky": "3.1.0",
     "identity-obj-proxy": "3.0.0",
