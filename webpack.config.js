@@ -25,7 +25,8 @@ module.exports = {
   },
   output: {
     path: path.resolve('./build'),
-    filename: 'app.min.js'
+    filename: 'app.min.js',
+    publicPath: "/fabelio/",
   },
   module: {
     rules: [
